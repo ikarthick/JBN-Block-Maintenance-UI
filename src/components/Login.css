@@ -1,0 +1,57 @@
+/* src/components/Login.css */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url('/public/login_bg.jpeg'); /* Update the path here */
+  background-size: cover;
+  color: #333; /* Dark text color */
+}
+
+header, footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.login-content {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  color: #333; /* Dark text color */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

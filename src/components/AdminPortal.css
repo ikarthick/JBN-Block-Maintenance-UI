@@ -1,0 +1,33 @@
+/* src/components/AdminPortal.css */
+
+.admin-portal {
+    padding: 20px;
+  }
+  
+  .residences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .residence-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .residence-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .view-details-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .view-details-link:hover {
+    text-decoration: underline;
+  }
+  

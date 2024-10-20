@@ -1,0 +1,12 @@
+/* src/components/BlockDetails.css */
+
+.block-details {
+    padding: 20px;
+  }
+  
+  .details-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
