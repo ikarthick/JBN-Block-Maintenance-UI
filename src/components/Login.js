@@ -1,5 +1,3 @@
-// src/components/Login.js
-
 import React, { useState } from 'react';
 import './Login.css';
 import { useNavigate } from 'react-router-dom'; 
@@ -15,7 +13,7 @@ function Login() {
     // Replace this with a secure API call for production
     if (username === 'admin' && password === 'admin') {
       // Simulate successful login (never store passwords in plain text!)
-      navigate('/admin'); // Redirect to /admin page
+      navigate('/portal'); // Redirect to intermediate page
     } else {
       alert('Invalid credentials'); // Display error message
     }
