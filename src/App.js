@@ -7,6 +7,7 @@ import AdminPortal from './components/AdminPortal';
 import BlockDetails from './components/BlockDetails'; 
 import DashboardPortal from './components/DashboardPortal';
 import CreateMonthlyReport from './components/CreateMonthlyReport';
+import CreateMonthlyExpenses from './components/CreateMonthlyExpenses';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/portal" element={<DashboardPortal />} />
         <Route path="/block/:id" element={<BlockDetails />} />
         <Route path="/create-monthly-report" element={<CreateMonthlyReport />} />
+        <Route path="/expenses" element={<CreateMonthlyExpenses />} />
       </Routes>
     </Router>
   );

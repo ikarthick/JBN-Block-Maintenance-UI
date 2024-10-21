@@ -1,0 +1,75 @@
+/* src/components/CreateMonthlyExpenses.css */
+
+.create-monthly-expenses-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #e8f5e9; /* Light green background for a fresh look */
+    min-height: 100vh;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Larger font size for the header */
+    color: #388e3c; /* Green color for the header */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .monthly-expenses-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px; /* Increased max width for more space */
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for better organization */
+    gap: 20px; /* Space between grid items */
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #388e3c; /* Green color consistent with header */
+    font-size: 0.9rem; /* Reduced font size */
+    white-space: nowrap; /* Prevent label line breaks */
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid #4caf50; /* Green border matching the theme */
+    width: 100px; /* Fixed width for input */
+    text-align: center; /* Center text */
+  }
+  
+  button {
+    padding: 15px 30px;
+    background-color: #388e3c; /* Green button color */
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Center the button */
+  }
+  
+  button:hover {
+    background-color: #2e7d32; /* Darker shade on hover */
+  }
+  

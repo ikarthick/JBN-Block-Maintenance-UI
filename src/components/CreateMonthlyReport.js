@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 import './CreateMonthlyReport.css';
 
 function CreateMonthlyReport() {
@@ -6,6 +7,8 @@ function CreateMonthlyReport() {
   const [notWorkingMeters, setNotWorkingMeters] = useState({});
   const [residents, setResidents] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const navigate = useNavigate(); // Initialize the useNavigate hook
 
   // Get previous month and year
   const date = new Date();
@@ -61,8 +64,12 @@ function CreateMonthlyReport() {
         ? 'Not Working'
         : meterReadings[resident.residentId] || '',
     }));
+
     console.log('Water Meter Readings:', readingsToSubmit);
     alert('Water meter readings submitted successfully');
+
+    // After submitting the readings, navigate to the CreateMonthlyExpenses component
+    navigate('/expenses');
   };
 
   if (loading) {
